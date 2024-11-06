@@ -16,6 +16,20 @@
 
 </div>
 
+---
+
+> [!IMPORTANT]
+>
+> **FORKED REPO NOTICE**
+>
+> This repo was forked from https://github.com/lit/lit to make adjustments to the
+> `packages/react` wrapper.
+>
+> See https://github.com/LeaseQuery/LQ.Stellar.ComponentLibrary/issues/416 for
+> more details.
+
+---
+
 Lit is a simple library for building fast, lightweight web components.
 
 At Lit's core is a boilerplate-killing component base class that provides reactive state, scoped styles, and a declarative template system that's tiny, fast and expressive.
