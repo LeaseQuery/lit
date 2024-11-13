@@ -106,6 +106,7 @@ export interface Options<I extends HTMLElement, E extends EventNames = {}> {
   elementClass: Constructor<I>;
   events?: E;
   displayName?: string;
+  preserveElementProps?: boolean;
 }
 
 type Constructor<T> = {new (): T};
@@ -213,6 +214,8 @@ const setProperty = <E extends Element>(
  * @param options.displayName A React component display name, used in debugging
  * messages. Default value is inferred from the name of custom element class
  * registered via `customElements.define`.
+ * @param options.preserveElementProps A boolean to determine if the React props
+ * should be preserved on the custom element.
  */
 export const createComponent = <
   I extends HTMLElement,
@@ -223,6 +226,7 @@ export const createComponent = <
   elementClass,
   events,
   displayName,
+  preserveElementProps,
 }: Options<I, E>): ReactWebComponent<I, E> => {
   const eventProps = new Set(Object.keys(events ?? {}));
 
@@ -323,6 +327,7 @@ export const createComponent = <
     }
 
     return React.createElement(tagName, {
+      ...(preserveElementProps ? elementProps : {}),
       ...reactProps,
       ref: React.useCallback(
         (node: I) => {
