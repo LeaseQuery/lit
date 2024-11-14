@@ -27,6 +27,13 @@
 >
 > See https://github.com/LeaseQuery/LQ.Stellar.ComponentLibrary/issues/416 for
 > more details.
+>
+> **How to Build**
+>
+> 1. After making changes to the package (presumably in `packages/react`),
+>    manually increment the version in `packages/react/package.json`.
+> 2. Run `$ npm build` in the root of the repo.
+> 3. Run `$ npm publish` in the `packages/react` directory.
 
 ---
 

@@ -1,12 +1,12 @@
 {
-  "name": "@lit/react",
-  "version": "1.0.6",
+  "name": "@leasequery/lit-react",
+  "version": "0.0.1",
   "description": "A React component wrapper for web components.",
   "license": "BSD-3-Clause",
   "homepage": "https://lit.dev/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lit/lit.git",
+    "url": "https://github.com/LeaseQuery/lit",
     "directory": "packages/react"
   },
   "type": "module",
@@ -199,6 +199,6 @@
     "@types/react": "17 || 18 || 19"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
