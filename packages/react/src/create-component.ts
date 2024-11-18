@@ -265,8 +265,16 @@ export const createComponent = <
         continue;
       }
 
-      if (eventProps.has(k) || k in elementClass.prototype) {
+      if (eventProps.has(k)) {
         elementProps[k] = v;
+        continue;
+      }
+
+      if (k in elementClass.prototype) {
+        elementProps[k] = v;
+        if (preserveElementProps) {
+          reactProps[k] = v;
+        }
         continue;
       }
 
@@ -327,7 +335,6 @@ export const createComponent = <
     }
 
     return React.createElement(tagName, {
-      ...(preserveElementProps ? elementProps : {}),
       ...reactProps,
       ref: React.useCallback(
         (node: I) => {
