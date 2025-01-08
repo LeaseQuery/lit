@@ -16,6 +16,31 @@
 
 </div>
 
+---
+
+> [!IMPORTANT]
+>
+> **FORKED REPO NOTICE**
+>
+> This repo was forked from https://github.com/lit/lit to make adjustments to
+> the `packages/react` wrapper by creating a new package,
+> `packages/react-finquery-fork`.
+>
+> See https://github.com/LeaseQuery/LQ.Stellar.ComponentLibrary/issues/416 for
+> more details.
+>
+> **How to Build**
+>
+> 1. After making changes to the package (presumably in
+>    `packages/react-finquery-fork`), manually increment the version in
+>    `packages/react-finquery-fork/package.json`.
+> 2. Run `$ npm changeset` and follow the CLI prompts.
+> 3. Commit changes (amends are fine).
+> 4. Run `$ npm run build` in the root of the repo.
+> 5. Run `$ npm publish` in the `packages/react-finquery-fork` directory.
+
+---
+
 Lit is a simple library for building fast, lightweight web components.
 
 At Lit's core is a boilerplate-killing component base class that provides reactive state, scoped styles, and a declarative template system that's tiny, fast and expressive.
