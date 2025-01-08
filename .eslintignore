@@ -139,6 +139,14 @@ packages/react/index.*
 packages/react/create-component.*
 packages/react/use-controller.*
 
+packages/react-finquery-fork/development/
+packages/react-finquery-fork/node/
+packages/react-finquery-fork/test/
+packages/react-finquery-fork/node_modules/
+packages/react-finquery-fork/index.*
+packages/react-finquery-fork/create-component.*
+packages/react-finquery-fork/use-controller.*
+
 packages/reactive-element/decorators/
 packages/reactive-element/development/
 packages/reactive-element/legacy-decorators/
