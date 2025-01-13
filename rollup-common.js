@@ -38,6 +38,7 @@ const PACKAGE_CLASS_PREFIXES = {
   '@lit/context': '_$Q',
   '@lit/react': '_$R',
   '@lit-labs/signals': '_$S',
+  '@leasequery/lit-react': '_$T',
 };
 
 // Validate prefix uniqueness
