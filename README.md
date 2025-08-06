@@ -34,10 +34,11 @@
 > 1. After making changes to the package (presumably in
 >    `packages/react-finquery-fork`), manually increment the version in
 >    `packages/react-finquery-fork/package.json`.
-> 2. Run `$ npm changeset` and follow the CLI prompts.
+> 2. Run `$ npm run changeset` from the root of the repo and follow the CLI prompts.
 > 3. Commit changes (amends are fine).
-> 4. Run `$ npm run build` in the root of the repo.
-> 5. Run `$ npm publish` in the `packages/react-finquery-fork` directory.
+> 4. Run `$ npm i` from the root of the repo.
+> 5. Run `$ npm run build` from the root of the repo.
+> 6. Run `$ npm publish` from the `packages/react-finquery-fork` directory.
 
 ---
 

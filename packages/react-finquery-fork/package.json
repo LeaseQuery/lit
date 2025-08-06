@@ -1,6 +1,6 @@
 {
   "name": "@leasequery/lit-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A React component wrapper for web components.",
   "license": "BSD-3-Clause",
   "homepage": "https://lit.dev/",
@@ -29,6 +29,19 @@
       },
       "development": "./development/index.js",
       "default": "./index.js"
+    },
+    "./use-controller.js": {
+      "types": "./development/use-controller.d.ts",
+      "browser": {
+        "development": "./development/use-controller.js",
+        "default": "./use-controller.js"
+      },
+      "node": {
+        "development": "./node/development/use-controller.js",
+        "default": "./node/use-controller.js"
+      },
+      "development": "./development/use-controller.js",
+      "default": "./use-controller.js"
     }
   },
   "files": [
@@ -36,7 +49,8 @@
     "!/development/test/",
     "/node/",
     "/index.{d.ts,d.ts.map,js,js.map}",
-    "/create-component.{d.ts,d.ts.map,js,js.map}"
+    "/create-component.{d.ts,d.ts.map,js,js.map}",
+    "/use-controller.{d.ts,d.ts.map,js,js.map}"
   ],
   "scripts": {
     "build": "wireit",
@@ -97,6 +111,7 @@
       "output": [
         "create-component.js{,.map}",
         "index.js{,.map}",
+        "use-controller.js{,.map}",
         "node/**/*.js{,.map}"
       ]
     },
